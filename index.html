@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Happy Birthday Kavimitha 🎀</title>
+<link rel="stylesheet" href="global.css">
+</head>
+<body>
 
+<audio id="bgm" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <h1 style="font-size:36px;color:#d63384;margin:0">Happy Birthday<br><span style="font-size:28px">Kavimitha 🎀💗</span></h1>
+  <p style="color:#8d3a57;margin-top:8px">Made with ❤️ — click to enter</p>
+  <a class="btn" href="menu.html" onclick="playClick()">CLICK ME! 😝</a>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // auto-play bg music gently on interaction (mobile will block autoplay so play on first click)
+  document.addEventListener('click', function onFirst(){
+    const bg = document.getElementById('bgm');
+    try{ bg.play(); }catch(e){}
+    document.removeEventListener('click', onFirst);
+  });
+</script>
+</body>
+</html>
