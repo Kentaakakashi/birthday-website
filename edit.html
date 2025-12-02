@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Edit — Video</title>
+<link rel="stylesheet" href="global.css">
+</head>
+<body>
 
+<a class="back-link" href="menu.html" onclick="playClick()">← Back</a>
+
+<div class="container">
+  <h2 style="color:#c21872;margin-top:8px">Video Edit 🎬</h2>
+
+  <div class="video-wrap" style="margin-top:18px">
+    <video controls width="100%" preload="metadata" playsinline>
+      <source src="assets/edit.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <p class="small-muted" style="margin-top:10px">Replace <code>assets/edit.mp4</code> with your edited clip.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
