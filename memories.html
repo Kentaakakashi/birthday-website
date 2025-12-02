@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Memories</title>
+<link rel="stylesheet" href="global.css">
+</head>
+<body>
 
+<a class="back-link" href="menu.html" onclick="playClick()">← Back</a>
+
+<div class="container">
+  <h2 style="color:#c21872;margin-top:10px">Memories 📸</h2>
+
+  <div class="carousel">
+    <div class="carousel-viewport">
+      <div class="slide-track">
+        <div class="slide" data-caption="Coffee shop day ☕ — the first time we talked">
+          <img src="assets/couple1.jpg" alt="memory1">
+        </div>
+        <div class="slide" data-caption="Sunset walk 🌅 — felt like a movie">
+          <img src="assets/couple2.jpg" alt="memory2">
+        </div>
+        <div class="slide" data-caption="Silly selfie day 🤪 — you made me laugh">
+          <img src="assets/couple3.jpg" alt="memory3">
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-controls center-row">
+      <button id="prevSlide" class="small-btn" onclick="playClick()">‹ Prev</button>
+      <div class="caption small-muted">Caption appears here</div>
+      <button id="nextSlide" class="small-btn" onclick="playClick()">Next ›</button>
+    </div>
+  </div>
+
+  <p style="margin-top:8px;color:#6b3b52">Tip: swipe left/right on mobile or use Prev/Next</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
