@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Recordings</title>
+<link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<a class="back-link" href="menu.html" onclick="playClick()">← Back</a>
+
+<div class="container">
+  <h2 style="color:#c21872;margin-top:8px">Voice Recordings 🎙️</h2>
+
+  <div class="recordings-list">
+    <!-- Recording 1 -->
+    <div class="recording-item">
+      <button class="play-bubble">▶</button>
+      <div style="flex:1">
+        <div style="font-weight:700">Message 1 — Morning surprise</div>
+        <div class="wave" aria-hidden>
+          <i style="height:6px"></i><i style="height:8px"></i><i style="height:10px"></i><i style="height:8px"></i><i style="height:6px"></i>
+        </div>
+      </div>
+      <audio src="assets/recording1.mp3"></audio>
+    </div>
+
+    <!-- Recording 2 -->
+    <div class="recording-item">
+      <button class="play-bubble">▶</button>
+      <div style="flex:1">
+        <div style="font-weight:700">Message 2 — Silly giggle</div>
+        <div class="wave" aria-hidden>
+          <i style="height:5px"></i><i style="height:9px"></i><i style="height:11px"></i><i style="height:7px"></i><i style="height:5px"></i>
+        </div>
+      </div>
+      <audio src="assets/recording2.mp3"></audio>
+    </div>
+
+    <!-- Recording 3 -->
+    <div class="recording-item">
+      <button class="play-bubble">▶</button>
+      <div style="flex:1">
+        <div style="font-weight:700">Message 3 — Promise</div>
+        <div class="wave" aria-hidden>
+          <i style="height:7px"></i><i style="height:6px"></i><i style="height:12px"></i><i style="height:8px"></i><i style="height:6px"></i>
+        </div>
+      </div>
+      <audio src="assets/recording3.mp3"></audio>
+    </div>
+
+  </div>
+  <p class="small-muted" style="margin-top:12px">Tip: replace files in <code>/assets/</code> with your recordings.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
