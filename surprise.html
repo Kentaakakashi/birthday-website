@@ -1,1 +1,23 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Surprise</title>
+<link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<a class="back-link" href="menu.html" onclick="playClick()">← Back</a>
+
+<div class="container" style="min-height:70vh; position:relative;">
+  <h2 style="color:#d6007f;margin-top:18px">Surprise 🎀</h2>
+  <p class="small-muted">Click the button to open the Discord invite (replace the URL in the code)</p>
+  <a class="btn" id="surpBtn" href="#" onclick="(function(){ playClick(); window.open('https://discord.gg/REPLACE_WITH_YOUR_INVITE','_blank'); })()">SURPRISE ME BISH 🎉</a>
+</div>
+
+<!-- fireworks canvas was in earlier build; keep it simple with floating hearts + glow -->
+<script src="script.js"></script>
+</body>
+</html>
